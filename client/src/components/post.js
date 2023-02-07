@@ -65,7 +65,7 @@ export default function Post() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="words">Words</label>
+          <label htmlFor="words">Key Words</label>
           <input
             type="text"
             className="form-control"
