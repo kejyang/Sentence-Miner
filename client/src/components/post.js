@@ -69,13 +69,14 @@ export default function Post() {
           <input
             type="text"
             className="form-control"
-            id="transSentence"
+            id="words"
             value={form.words}
             onChange={(e) => updateForm({ words: e.target.value })}
           />
         </div>
         <div className="form-group">
           <input
+            id="submit-sentence"
             type="submit"
             value="Create sentence"
             className="btn btn-primary"

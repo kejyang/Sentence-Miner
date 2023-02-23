@@ -32,7 +32,12 @@ recordRoutes.route("/record/:id").get(function (req, res) {
       .collection("records")
       .findOne(myquery, function (err, result) {
         if (err) throw err;
-        res.json(result);
+        if(result){
+          res.json(result);
+        }
+        else{
+          res.status(404).send("Failed to find sentence!")
+        }
       });
 });
 

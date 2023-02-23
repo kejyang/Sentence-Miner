@@ -35,11 +35,11 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={handleSearch} value={query}></input>
-              <NavLink to={`/search/${query}`}><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></NavLink>
+              <input class="form-control mr-sm-2" id='search-input' type="search" placeholder="Search" aria-label="Search" onChange={handleSearch} value={query}></input>
+              <NavLink to={`/search/${query}`}><button class="btn btn-outline-success my-2 my-sm-0" id='search-button' type="submit">Search</button></NavLink>
             </form>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/post">
+              <NavLink id='create-sentence-link' className="nav-link" to="/post">
                 Create Sentence
               </NavLink>
             </li>

@@ -42,7 +42,7 @@ const Record = (props) => (
           const records = await response.json();
           var newRecords = [];
           for (let i = 0; i < records.length; i++) {
-            if (records[i].originalSentence.includes(params.query)){
+            if (records[i].originalSentence.toLowerCase().includes(params.query.toLowerCase())){
                 newRecords.push(records[i]);
             }
           }
@@ -52,7 +52,7 @@ const Record = (props) => (
         getRecords();
     
         return; 
-      }, [records.length]);
+      }, [params.query]);
   
     // This method will delete a record
     async function deleteRecord(id) {
