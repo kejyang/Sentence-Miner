@@ -2,7 +2,7 @@
 
 ### How to Run
 Go to the server directory and run npm init -y and then npm install mongodb express cors dotenv. Run npm start in the server directory. Then open another terminal
-and go to the client directory and run npm start. The website should open up on localhost:3000 after a brief period of time.
+and go to the client directory and run npm install react-scripts@latest --legacy-peer-deps and then npm start. The website should open up on localhost:3000 after a brief period of time.
 
 ### Introduction
 
