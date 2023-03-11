@@ -1,7 +1,7 @@
 # Sentence-Miner
 
 ### How to Run
-Got to the server directory and run npm init -y and then npm install mongodb express cors dotenv. Run npm start in the server directory. Then open another terminal
+Go to the server directory and run npm init -y and then npm install mongodb express cors dotenv. Run npm start in the server directory. Then open another terminal
 and go to the client directory and run npm start. The website should open up on localhost:3000 after a brief period of time.
 
 ### Introduction
